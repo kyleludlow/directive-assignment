@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Directives</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+
+
+        <h1>Angular Directives</h1>
+
+        <p>&nbsp; Directives are markers applied to DOM elements that allow Angular to manipulate their behavior using
+            the HTML
+            compiler. This can be done by using event listeners or by transforming the DOM element itself. Directives
+            are basically javascript code that is defined inside the Angular module using .directive('name',
+            function(){}) that can be called within the html document using a defined name instead of cluttering the
+            html file with long snippets of code. this allows you to compile many lines of code into a neat html file
+            while also adding functionality beyond regular html. An angular directive can be called as an html element,
+            as attribute to an element, a class, or a comment. If any lengthy part of an html document needs to be
+            repeated, defining a directive to inject that code is a good bet. Below are a couple of examples. The first
+            example uses a directive to to easily insert an input and submit button into a an html document. This
+            directive is used multiple times to save line-space. The second example is a directive containing a full
+            form that may have to be used on multiple occasions. Both examples use templateUrl to link to html
+            documents containing the lines of html code that replace the directive element in the index html file.
+    </div>
+    <h2>Example 1</h2>
+    <br>
+    <input-and-button></input-and-button>
+    <br>
+    <input-and-button></input-and-button>
+    <br>
+    <input-and-button></input-and-button>
+    <br>
+    <input-and-button></input-and-button>
+    <br>
+
+    <p>Or....</p>
+
+    <h2>Example 2</h2>
+    <user-form></user-form>
+
+
+</div>
+<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
+</body>
+</html>
